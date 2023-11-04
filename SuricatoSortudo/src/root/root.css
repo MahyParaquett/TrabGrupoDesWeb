@@ -1,0 +1,15 @@
+:root {
+  --primeira-cor: #061a06;
+  --segunda-cor: #0c432e;
+  --terceira-cor: #bd7834;
+  --quarta-cor: #d4bf6a;
+  --quinta-cor: #e2e2ac;
+}
+
+.dark-mode:root {
+  --primeira-cor: #331b1c;
+  --segunda-cor: #583c2f;
+  --terceira-cor: #865c44;
+  --quarta-cor: #ba8c59;
+  --quinta-cor: #d6c271;
+}
