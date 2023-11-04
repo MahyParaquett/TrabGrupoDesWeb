@@ -13,3 +13,7 @@
   --quarta-cor: #ba8c59;
   --quinta-cor: #d6c271;
 }
+
+body {
+  background-color: var(--quarta-cor);
+}
