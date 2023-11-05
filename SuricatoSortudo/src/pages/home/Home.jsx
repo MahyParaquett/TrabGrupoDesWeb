@@ -1,9 +1,12 @@
 import surilogo from "../../components/img/logosuricatocirc.png";
 import "../../root/root.css";
+import Colrows from "../../components/colrows/Colrows";
+import CarouselHome from "../../components/carouselHome/CarouselHome";
 
 function Home() {
   return (
-    <body>
+    <>
+      <Colrows />
       <div>
         <h1>O Suricato Sortudo</h1>
         <a href="#" target="_blank">
@@ -46,7 +49,7 @@ function Home() {
           magnam! Error quasi beatae corporis repellat aspernatur.
         </p>
       </div>
-    </body>
+    </>
   );
 }
 

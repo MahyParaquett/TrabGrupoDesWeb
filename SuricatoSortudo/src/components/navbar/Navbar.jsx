@@ -9,6 +9,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { FaShoppingCart } from "react-icons/fa";
 import surilogo from "../../components/img/logosuricatocirc.png";
+import { Link } from "react-router-dom";
 
 function Navbar1() {
   return (
@@ -18,13 +19,13 @@ function Navbar1() {
           key={expand}
           expand={expand}
           sticky="top"
-          style={{ background: "var(--terceira-cor)" }}
+          style={{ background: "var(--segunda-cor)" }}
           className="mb-3"
           //   bg="dark"
           //   data-bs-theme="dark"
         >
           <Container fluid>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="#" style={{ color: "white" }}>
               {" "}
               <img src={surilogo} width={60} />
               &emsp;O Suricato Sortudo
@@ -42,21 +43,43 @@ function Navbar1() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Produtos</Nav.Link>
+                  <Nav.Link
+                    as={Link}
+                    to="/"
+                    style={{ color: "white", fontWeight: "bold" }}
+                  >
+                    Home
+                  </Nav.Link>
+                  <Nav.Link
+                    as={Link}
+                    to="/produtos"
+                    style={{ color: "white", fontWeight: "bold" }}
+                  >
+                    Produtos
+                  </Nav.Link>
                   <NavDropdown
                     title="Categorias"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
+                    style={{ color: "white", fontWeight: "bold" }}
                   >
-                    <NavDropdown.Item href="#action3">
+                    <NavDropdown.Item as={Link} to="/aventura">
                       Aventura
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item as={Link} to="/estrategia">
                       Estratégia
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">Família</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/familia">
+                      Família
+                    </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="#action2">
+                  <Nav.Link
+                    as={Link}
+                    to="/sobre"
+                    style={{ color: "white", fontWeight: "bold" }}
+                  >
+                    Sobre nós
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/carrinho" style={{ color: "white" }}>
                     <FaShoppingCart style={{ fontSize: "24px" }} />
                   </Nav.Link>
                 </Nav>

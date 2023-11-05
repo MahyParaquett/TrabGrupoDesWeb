@@ -15,8 +15,17 @@
 }
 
 body {
+  background-color: var(--quinta-cor);
+}
+
+.column-background-1 {
   background-color: var(--quarta-cor);
 }
-.Sobre {
-  text-align: center;
+
+.column-background-2 {
+  background-color: var(--terceira-cor);
+}
+
+.column-background-3 {
+  background-color: var(--quarta-cor);
 }
