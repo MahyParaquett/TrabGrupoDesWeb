@@ -1,19 +1,14 @@
 import suricatoFooter from "../img/suricatoFooter.jpg";
 import { MainFooter } from "./footer.styled";
-
 import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
     <MainFooter>
-      <img src={suricatoFooter} />
-      <p as={Link} to="/produtos">
-        home
-      </p>
-      <p>produtos</p>
-      <p>contatos</p>
-      <p>sobre</p>
+      <img src={suricatoFooter} width={"170vw"} height={"170vh"}/>
+      <Link to = "/contatos" style={{ color: "#d6c271" }} >Contatos</Link>
     </MainFooter>
   );
 }
 export default Footer;
+
