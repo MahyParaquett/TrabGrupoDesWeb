@@ -5,9 +5,9 @@ export const MainFooter = styled.div`
   padding-left: 2vw;
   font-size: 2em;
   align-items: center;
-  gap: 16vw;
+  gap: 4vw;
   color: #d6c271;
   background-color: #583c2f;
   height: 28vh;
-  width: 100vw;
+  width: 47.5vw;
 `;
