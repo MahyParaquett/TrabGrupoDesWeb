@@ -3,16 +3,9 @@ import "../../root/root.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import CarouselHome from "../carouselHome/CarouselHome";
-import lancamentos from "../../components/img/lancamentos.png";
-import bannerlat from "../img/bannerlat.png";
+import bannerlat from "../../components/img/bannerlat.png";
 
-function Colrows() {
-  const imgStyle = {
-    width: "100%",
-    height: "auto",
-  };
-
+function post() {
   return (
     <Container>
       <Row className="">
@@ -65,7 +58,6 @@ function Colrows() {
         >
           <h2>Destaques Recentes</h2>
           <br />
-          <CarouselHome />
           <hr />
           <h2>Novidades</h2>
           <p>
@@ -76,34 +68,6 @@ function Colrows() {
             adipisicing elit. Voluptatum eum impedit vero quidem modi debitis,
             beatae neque perferendis laudantium assumenda minus eveniet vitae
             molestias rerum quisquam! Modi unde maiores aliquid?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            maiores nisi dignissimos eveniet nihil fuga soluta, dolor et dicta
-            neque? Dolorem tempore consectetur aut libero possimus! Perferendis
-            iure molestias sequi. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Blanditiis officiis doloremque error accusamus.
-            Voluptatem, ab tempora nesciunt consequuntur ipsum asperiores
-            temporibus, natus vel odio dicta harum, consectetur eaque magnam.
-            Iusto?
-          </p>
-          <hr />
-          <a href="#" target="_blank">
-            <img src={lancamentos} alt="banner lancamentos" style={imgStyle} />
-          </a>
-          <hr />
-          <h2>Clássicos x Modernos</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius harum
-            facere amet ipsa libero, esse hic quam aut numquam blanditiis,
-            veritatis sed dolor consequuntur deleniti pariatur earum expedita,
-            aspernatur porro! Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Quo enim eaque labore vitae voluptas quaerat consectetur
-            excepturi ab quibusdam dolor quam odio doloribus fugiat assumenda,
-            pariatur explicabo, deserunt nihil earum. Lorem ipsum dolor, sit
-            amet consectetur adipisicing elit. Repudiandae, fugit maiores quam
-            quod aut assumenda neque, quisquam quidem, pariatur error dicta vel
-            molestias magnam! Error quasi beatae corporis repellat aspernatur.
           </p>
         </Col>
         <Col
@@ -119,4 +83,4 @@ function Colrows() {
   );
 }
 
-export default Colrows;
+export default post;

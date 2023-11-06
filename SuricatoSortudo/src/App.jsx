@@ -9,6 +9,7 @@ import Aventura from "./pages/aventura/Aventura";
 import Estrategia from "./pages/estrategia/Estrategia";
 import Familia from "./pages/familia/Familia";
 import Carrinho from "./pages/carrinho/Carrinho";
+import Post from "./pages/post/post";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/familia" element={<Familia />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="/post" element={<Post />} />
         <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
       <Footer />
