@@ -4,8 +4,15 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CarouselHome from "../carouselHome/CarouselHome";
+import lancamentos from "../../components/img/lancamentos.png";
+import bannerlat from "../img/bannerlat.png";
 
 function Colrows() {
+  const imgStyle = {
+    width: "100%",
+    height: "auto",
+  };
+
   return (
     <Container>
       <Row className="">
@@ -13,10 +20,29 @@ function Colrows() {
           className="column-background-1 rounded"
           style={{ marginInline: "10px", padding: "10px" }}
         >
-          1 of 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Blanditiis officiis doloremque error accusamus. Voluptatem, ab tempora
-          nesciunt consequuntur ipsum asperiores temporibus, natus vel odio
-          dicta harum, consectetur eaque magnam. Iusto?
+          <h4>Links úteis</h4>
+          <div>
+            <ul className="lista-lateral">
+              <li>
+                <a href="#"> Home</a>
+              </li>
+              <li>
+                <a href="#"> Frete</a>
+              </li>
+              <li>
+                <a href="#"> Agenda</a>
+              </li>
+              <li>
+                <a href="#"> Apoiadores</a>
+              </li>
+              <li>
+                <a href="#"> Sobre nós</a>
+              </li>
+              <li>
+                <a href="#"> Contato</a>
+              </li>
+            </ul>
+          </div>
         </Col>
         <Col
           xs={8}
@@ -26,6 +52,7 @@ function Colrows() {
           <h2>Destaques Recentes</h2>
           <br />
           <CarouselHome />
+          <hr />
           <h2>Novidades</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
@@ -46,15 +73,32 @@ function Colrows() {
             temporibus, natus vel odio dicta harum, consectetur eaque magnam.
             Iusto?
           </p>
+          <hr />
+          <a href="#" target="_blank">
+            <img src={lancamentos} alt="banner lancamentos" style={imgStyle} />
+          </a>
+          <hr />
+          <h2>Clássicos x Modernos</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius harum
+            facere amet ipsa libero, esse hic quam aut numquam blanditiis,
+            veritatis sed dolor consequuntur deleniti pariatur earum expedita,
+            aspernatur porro! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quo enim eaque labore vitae voluptas quaerat consectetur
+            excepturi ab quibusdam dolor quam odio doloribus fugiat assumenda,
+            pariatur explicabo, deserunt nihil earum. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Repudiandae, fugit maiores quam
+            quod aut assumenda neque, quisquam quidem, pariatur error dicta vel
+            molestias magnam! Error quasi beatae corporis repellat aspernatur.
+          </p>
         </Col>
         <Col
           className="column-background-3 rounded"
           style={{ marginInline: "10px", padding: "10px" }}
         >
-          3 of 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Laboriosam maiores nisi dignissimos eveniet nihil fuga soluta, dolor
-          et dicta neque? Dolorem tempore consectetur aut libero possimus!
-          Perferendis iure molestias sequi.
+          <a href="#" target="_blank">
+            <img src={bannerlat} alt="banner lateral" />
+          </a>
         </Col>
       </Row>
     </Container>

@@ -29,3 +29,26 @@ body {
 .column-background-3 {
   background-color: var(--quarta-cor);
 }
+
+.lista-lateral {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.lista-lateral a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.lista-lateral li {
+  position: relative;
+  padding-top: 8px;
+}
+
+.lista-lateral li a:hover {
+  display: block;
+  color: white;
+  background-color: var(--segunda-cor);
+}
