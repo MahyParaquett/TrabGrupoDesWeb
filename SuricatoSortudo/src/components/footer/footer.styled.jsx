@@ -5,7 +5,7 @@ export const MainFooter = styled.div`
   padding-left: 2vw;
   font-size: 3em;
   align-items: center;
-  gap: 12vw;
+  gap: 2vw;
   color: #d6c271;
   background-color: #583c2f;
   height: 28vh;
