@@ -41,7 +41,7 @@ export function Footer() {
             </a>
           </li>
         </ul>
-        <p className="mt-auto">
+        <p className="TextoFooter">
           © 2023 O Suricato Sortudo. Todos os direitos reservados.
         </p>
       </MainFooter>

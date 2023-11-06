@@ -12,4 +12,8 @@ export const MainFooter = styled.div`
   width: 88vw;
   max-width: 100%;
   margin: 2vh auto;
+
+  .TextoFooter {
+    padding-top: 3vh;
+  }
 `;
