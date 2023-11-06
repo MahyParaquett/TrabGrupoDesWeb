@@ -5,10 +5,11 @@ export const MainFooter = styled.div`
   padding-left: 2vw;
   font-size: 3em;
   align-items: center;
-  gap: 24vw;
+  gap: 12vw;
   color: #d6c271;
   background-color: #583c2f;
   height: 28vh;
   width: 88vw;
+  max-width: 100%;
+  margin: 2vh auto;
 `;
-
