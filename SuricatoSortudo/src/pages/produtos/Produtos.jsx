@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import bannerlat from "../../components/img/bannerlat.png";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart, FaTrash } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -24,6 +24,19 @@ function Produtos() {
       console.log(err);
     } finally {
       setLoading(false);
+    }
+  };
+  const deleteProduto = async (id) => {
+    try {
+      const response = await axios.delete(`${url}/${id}`);
+      if (response.status === 200) {
+        const arrayFiltrado = produtos.filter((item) => item.id !== id);
+        setProdutos(arrayFiltrado);
+      } else {
+        throw new Error("Erro ao deletar produto");
+      }
+    } catch (error) {
+      console.error(error);
     }
   };
   useEffect(() => {
@@ -127,6 +140,18 @@ function Produtos() {
                         Adicionar ao Carrinho
                       </button>
                     </div>
+                    <button
+                      style={{
+                        width: "202px",
+                        marginLeft: `20px`,
+                        left: `40px`,
+                        marginBottom: `20px`,
+                      }}
+                      onClick={() => deleteProduto(item.id)}
+                      className="btn btn-danger"
+                    >
+                      <FaTrash style={{ fontSize: "24px" }} /> Excluir
+                    </button>
                   </div>
                 </div>
               ))}
