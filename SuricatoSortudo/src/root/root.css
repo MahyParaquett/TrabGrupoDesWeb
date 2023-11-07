@@ -6,7 +6,7 @@
   --quinta-cor: #e2e2ac;
 }
 
-:root.dark-mode {
+.dark-mode:root {
   --primeira-cor: #331b1c;
   --segunda-cor: #583c2f;
   --terceira-cor: #865c44;

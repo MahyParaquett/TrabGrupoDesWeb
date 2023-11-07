@@ -13,6 +13,7 @@ function Produtos() {
   const [produtos, setProdutos] = useState([]);
   const [pesquisa, setPesquisa] = useState("");
   const [loading, setLoading] = useState("false");
+  const [deleteErro, setDeleteErro] = useState("");
 
   const getProdutos = async () => {
     setLoading(true);
@@ -27,16 +28,26 @@ function Produtos() {
     }
   };
   const deleteProduto = async (id) => {
-    try {
-      const response = await axios.delete(`${url}/${id}`);
-      if (response.status === 200) {
-        const arrayFiltrado = produtos.filter((item) => item.id !== id);
-        setProdutos(arrayFiltrado);
-      } else {
-        throw new Error("Erro ao deletar produto");
+    // Recupera as informações do usuário
+    const usuario = JSON.parse(localStorage.getItem("info"));
+
+    // Verifica se o usuário pode deletar
+    if (usuario && usuario.canDelete) {
+      try {
+        const response = await axios.delete(`${url}/${id}`);
+        if (response.status === 200) {
+          const arrayFiltrado = produtos.filter((item) => item.id !== id);
+          setProdutos(arrayFiltrado);
+        } else {
+          throw new Error("Erro ao deletar produto");
+        }
+      } catch (error) {
+        console.error(error);
+        setDeleteErro("Erro ao deletar produto");
       }
-    } catch (error) {
-      console.error(error);
+    } else {
+      console.error("Usuário não tem permissão para deletar produtos");
+      setDeleteErro("Usuário não tem permissão para deletar produtos");
     }
   };
   useEffect(() => {
@@ -152,6 +163,7 @@ function Produtos() {
                     >
                       <FaTrash style={{ fontSize: "24px" }} /> Excluir
                     </button>
+                    {deleteErro && <p>{deleteErro}</p>}
                   </div>
                 </div>
               ))}
