@@ -10,7 +10,7 @@ import dixit from "../../components/img/dixit.png";
 import ludo from "../../components/img/ludo.jpg";
 import tabu from "../../components/img/tabu.png";
 
-const url = "https://6542cd3301b5e279de1f982d.mockapi.io/produtos";
+const url = "https://65496be2dd8ebcd4ab2491f6.mockapi.io/produtos";
 
 function Familia() {
   const [loading, setLoading] = useState(false);
