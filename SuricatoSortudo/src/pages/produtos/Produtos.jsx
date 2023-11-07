@@ -7,12 +7,14 @@ import bannerlat from "../../components/img/bannerlat.png";
 import { FaShoppingCart, FaTrash } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const url = "https://65496be2dd8ebcd4ab2491f6.mockapi.io/produtos";
 function Produtos() {
   const [produtos, setProdutos] = useState([]);
   const [pesquisa, setPesquisa] = useState("");
   const [loading, setLoading] = useState("false");
+  const [deleteErro, setDeleteErro] = useState("");
 
   const getProdutos = async () => {
     setLoading(true);
@@ -27,16 +29,26 @@ function Produtos() {
     }
   };
   const deleteProduto = async (id) => {
-    try {
-      const response = await axios.delete(`${url}/${id}`);
-      if (response.status === 200) {
-        const arrayFiltrado = produtos.filter((item) => item.id !== id);
-        setProdutos(arrayFiltrado);
-      } else {
-        throw new Error("Erro ao deletar produto");
+    // Recupera as informações do usuário
+    const usuario = JSON.parse(localStorage.getItem("info"));
+
+    // Verifica se o usuário pode deletar
+    if (usuario && usuario.canDelete) {
+      try {
+        const response = await axios.delete(`${url}/${id}`);
+        if (response.status === 200) {
+          const arrayFiltrado = produtos.filter((item) => item.id !== id);
+          setProdutos(arrayFiltrado);
+        } else {
+          throw new Error("Erro ao deletar produto");
+        }
+      } catch (error) {
+        console.error(error);
+        setDeleteErro("Erro ao deletar produto");
       }
-    } catch (error) {
-      console.error(error);
+    } else {
+      console.error("Usuário não tem permissão para deletar produtos");
+      setDeleteErro("Usuário não tem permissão para deletar produtos");
     }
   };
   useEffect(() => {
@@ -63,35 +75,32 @@ function Produtos() {
             <div>
               <ul className="lista-lateral">
                 <li>
-                  <a href="#"> Home</a>
+                  <Link to="/home">Home</Link>
                 </li>
                 <li>
-                  <a href="#"> Frete</a>
+                  <Link to="#"> Frete</Link>
                 </li>
                 <li>
-                  <a href="#"> Agenda</a>
+                  <Link to="#"> Agenda</Link>
                 </li>
                 <li>
-                  <a href="#"> Apoiadores</a>
+                  <Link to="#"> Apoiadores</Link>
                 </li>
                 <li>
-                  <a href="#"> Sobre nós</a>
+                  <Link to="/sobre"> Sobre nós</Link>
                 </li>
                 <li>
-                  <a href="#"> Contato</a>
+                  <Link to="/contatos"> Contato</Link>
                 </li>
                 <hr />
                 <li>
-                  <a href="#"> Login</a>
+                  <Link to="/">Login</Link>
                 </li>
                 <li>
-                  <a href="#"> POST</a>
+                  <Link to="/post">Adicionar Produto</Link>
                 </li>
                 <li>
-                  <a href="#"> PUT</a>
-                </li>
-                <li>
-                  <a href="#"> DELETE</a>
+                  <Link to="/put">Alterar Produto</Link>
                 </li>
               </ul>
             </div>
@@ -152,6 +161,7 @@ function Produtos() {
                     >
                       <FaTrash style={{ fontSize: "24px" }} /> Excluir
                     </button>
+                    {deleteErro && <p>{deleteErro}</p>}
                   </div>
                 </div>
               ))}

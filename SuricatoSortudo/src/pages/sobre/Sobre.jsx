@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import bannerlat from "../../components/img/bannerlat.png";
+import { Link } from "react-router-dom";
 
 function Sobre() {
   const imgStyle = {
@@ -23,22 +24,32 @@ function Sobre() {
           <div>
             <ul className="lista-lateral">
               <li>
-                <a href="#"> Home</a>
+                <Link to="/home">Home</Link>
               </li>
               <li>
-                <a href="#"> Frete</a>
+                <Link to="#"> Frete</Link>
               </li>
               <li>
-                <a href="#"> Agenda</a>
+                <Link to="#"> Agenda</Link>
               </li>
               <li>
-                <a href="#"> Apoiadores</a>
+                <Link to="#"> Apoiadores</Link>
               </li>
               <li>
-                <a href="#"> Sobre nós</a>
+                <Link to="/sobre"> Sobre nós</Link>
               </li>
               <li>
-                <a href="#"> Contato</a>
+                <Link to="/contatos"> Contato</Link>
+              </li>
+              <hr />
+              <li>
+                <Link to="/">Login</Link>
+              </li>
+              <li>
+                <Link to="/post">Adicionar Produto</Link>
+              </li>
+              <li>
+                <Link to="/put">Alterar Produto</Link>
               </li>
             </ul>
           </div>

@@ -10,6 +10,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { FaShoppingCart } from "react-icons/fa";
 import surilogo from "../../components/img/logosuricatocirc.png";
 import { Link } from "react-router-dom";
+import DarkMode from "../darkmode/DarkMode";
 
 function Navbar1() {
   return (
@@ -45,7 +46,7 @@ function Navbar1() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link
                     as={Link}
-                    to="/"
+                    to="/home"
                     style={{ color: "white", fontWeight: "bold" }}
                   >
                     Home
@@ -97,6 +98,7 @@ function Navbar1() {
                     Pesquisa
                   </Button>
                 </Form>
+                <DarkMode />
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

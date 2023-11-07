@@ -13,6 +13,10 @@
   --quarta-cor: #ba8c59;
   --quinta-cor: #d6c271;
 }
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
 
 body {
   background-color: var(--quinta-cor);
