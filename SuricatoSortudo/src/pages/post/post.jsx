@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import bannerlat from "../../components/img/bannerlat.png";
+import { Link } from "react-router-dom";
 
 const url = "https://65496be2dd8ebcd4ab2491f6.mockapi.io/produtos";
 
@@ -55,35 +56,32 @@ function post() {
           <div>
             <ul className="lista-lateral">
               <li>
-                <a href="#"> Home</a>
+                <Link to="/home">Home</Link>
               </li>
               <li>
-                <a href="#"> Frete</a>
+                <Link to="#"> Frete</Link>
               </li>
               <li>
-                <a href="#"> Agenda</a>
+                <Link to="#"> Agenda</Link>
               </li>
               <li>
-                <a href="#"> Apoiadores</a>
+                <Link to="#"> Apoiadores</Link>
               </li>
               <li>
-                <a href="#"> Sobre nós</a>
+                <Link to="/sobre"> Sobre nós</Link>
               </li>
               <li>
-                <a href="#"> Contato</a>
+                <Link to="/contatos"> Contato</Link>
               </li>
               <hr />
               <li>
-                <a href="#"> Login</a>
+                <Link to="/">Login</Link>
               </li>
               <li>
-                <a href="#"> POST</a>
+                <Link to="/post">Adicionar Produto</Link>
               </li>
               <li>
-                <a href="#"> PUT</a>
-              </li>
-              <li>
-                <a href="#"> DELETE</a>
+                <Link to="/put">Alterar Produto</Link>
               </li>
             </ul>
           </div>
