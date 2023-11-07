@@ -47,29 +47,29 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias :
 
 ---
 
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Utilizar Componentes Funcionais e no mínimo 2 Hooks, useState e useEffect;
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Deve possuir pelo menos 7 Componentes;
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Deve possuir pelo menos 3 rotas utilizando o React Router v6;
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Utilizar axios para requisições HTTP;
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>É Necessário fazer requisições GET, POST, DELETE e PUT;
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Pelo menos um filtro - filtrar uma lista de produtos por exemplo, ou uma categoria;
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Inputs com Validação (Não deixar cadastrar/editar produtos em branco ou faltando algum campo)
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/> Utilizar Componentes Funcionais e no mínimo 2 Hooks, useState e useEffect; <br/>
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/>Deve possuir pelo menos 7 Componentes; <br/>
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/>Deve possuir pelo menos 3 rotas utilizando o React Router v6; <br/>
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/>Utilizar axios para requisições HTTP; <br/>
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/>É Necessário fazer requisições GET, POST, DELETE e PUT; <br/>
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/>Pelo menos um filtro - filtrar uma lista de produtos por exemplo, ou uma categoria; <br/>
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/>Inputs com Validação (Não deixar cadastrar/editar produtos em branco ou faltando algum campo) <br/>
 
 ---
 
 <img width="25" height="25" src="https://img.icons8.com/color/48/plus--v1.png" alt="plus--v1"/>*******BÔNUS ATENDIDOS*******
 ---
 
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Dark Mode;
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Site totalmente reponsivo;
-<img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Tela de Login - Rota Autenticada
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/>Dark Mode; <br/>
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/>Site totalmente reponsivo; <br/>
+<img width="20" height="20" src="https://img.icons8.com/color/48/work-authorisation.png" alt="work-authorisation"/>Tela de Login - Rota Autenticada <br/>
 
 ---
 
 <img width="25" height="25" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-functionality-no-code-flaticons-flat-flat-icons-2.png" alt="external-functionality-no-code-flaticons-flat-flat-icons-2"/> *FUNCIONALIDADE*
 ---
 
- <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/home.png" alt="home"/>*Home*: A nossa página inicial recebe você com um design atraente e um botão para ativar o modo "Dark Mode" para uma experiência noturna mais confortável. A partir daqui, você pode explorar nossas ofertas, novos lançamentos e promoções especiais.
+<img width="20" height="20" src="https://img.icons8.com/color/48/home--v1.png" alt="home--v1"/>*Home*: A nossa página inicial recebe você com um design atraente e um botão para ativar o modo "Dark Mode" para uma experiência noturna mais confortável. A partir daqui, você pode explorar nossas ofertas, novos lançamentos e promoções especiais.
 
 <img width="20" height="20" src="https://img.icons8.com/color/48/product--v1.png" alt="product--v1"/>*Produto*: Na seção de loja, você pode navegar por nossa vasta seleção de jogos de tabuleiro. Use filtros para encontrar os jogos que deseja e adicione-os ao seu carrinho com apenas alguns cliques.
 
