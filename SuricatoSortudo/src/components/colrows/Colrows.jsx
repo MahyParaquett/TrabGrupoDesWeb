@@ -30,29 +30,29 @@ function Colrows() {
                 <Link to="/home">Home</Link>
               </li>
               <li>
-                <a href="#"> Frete</a>
+                <Link to="#"> Frete</Link>
               </li>
               <li>
-                <a href="#"> Agenda</a>
+                <Link to="#"> Agenda</Link>
               </li>
               <li>
-                <a href="#"> Apoiadores</a>
+                <Link to="#"> Apoiadores</Link>
               </li>
               <li>
-                <a href="/sobre"> Sobre nós</a>
+                <Link to="/sobre"> Sobre nós</Link>
               </li>
               <li>
-                <a href="/contatos"> Contato</a>
+                <Link to="/contatos"> Contato</Link>
               </li>
               <hr />
               <li>
                 <Link to="/">Login</Link>
               </li>
               <li>
-                <a href="/post">Adicionar Produto</a>
+                <Link to="/post">Adicionar Produto</Link>
               </li>
               <li>
-                <a href="/put">Alterar Produto</a>
+                <Link to="/put">Alterar Produto</Link>
               </li>
             </ul>
           </div>

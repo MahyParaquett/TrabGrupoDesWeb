@@ -137,13 +137,14 @@ function Produtos() {
                   <div className="card">
                     <img
                       src={item.imagem} //url
-                      className="card-img-top"
+                      className="card-img-top product-image"
                       alt={item.nome}
                     />
                     <div className="card-body">
                       <h5 className="card-title">{item.nome}</h5>
                       <p className="card-text">{item.categoria}</p>
                       <p className="card-text">R$ {item.valor}</p>
+                      <p className="card-text">ID {item.id}</p>
                       <button className="btn btn-primary">
                         <FaShoppingCart style={{ fontSize: "24px" }} />{" "}
                         Adicionar ao Carrinho

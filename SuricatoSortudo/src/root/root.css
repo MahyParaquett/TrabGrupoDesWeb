@@ -62,3 +62,8 @@ body {
 .nav-link.active {
   color: white !important;
 }
+
+.product-image {
+  height: 200px;
+  object-fit: contain;
+}

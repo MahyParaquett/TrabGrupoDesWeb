@@ -10,7 +10,11 @@ function DarkMode() {
   }, [darkMode]);
 
   return (
-    <Button variant="secondary" onClick={() => setDarkMode(!darkMode)}>
+    <Button
+      variant="secondary"
+      onClick={() => setDarkMode(!darkMode)}
+      style={{ marginInline: 10 }}
+    >
       {darkMode ? <FaSun /> : <FaMoon />}
     </Button>
   );
