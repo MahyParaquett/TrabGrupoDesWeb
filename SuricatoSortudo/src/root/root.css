@@ -6,12 +6,16 @@
   --quinta-cor: #e2e2ac;
 }
 
-.dark-mode:root {
+:root.dark-mode {
   --primeira-cor: #331b1c;
   --segunda-cor: #583c2f;
   --terceira-cor: #865c44;
   --quarta-cor: #ba8c59;
   --quinta-cor: #d6c271;
+}
+body.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 body {
