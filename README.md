@@ -75,7 +75,7 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias :
 
 <img width="20" height="20" src="https://img.icons8.com/color/48/shopping-cart-loaded.png" alt="shopping-cart-loaded"/>*Carrinho*: Acesse seu carrinho de compras a qualquer momento para revisar os itens selecionados, ajustar quantidades e proceder ao checkout. É simples e conveniente.
 
-<img width="20" height="20" src="https://img.icons8.com/external-outline-black-m-oki-orlando/32/external-crud-database-outline-outline-black-m-oki-orlando.png" alt="external-crud-database-outline-outline-black-m-oki-orlando"/> **CRUDs (Create, Read, Update, Delete)**: Se você está no controle das operações de gerenciamento do site, você tem acesso a poderosas ferramentas de CRUD. Crie novos produtos, atualize informações, leia dados existentes e exclua itens com facilidade, garantindo que nosso catálogo esteja sempre atualizado.
+<img width="20" height="20" src="https://img.icons8.com/external-outline-black-m-oki-orlando/32/228BE6/external-crud-database-outline-outline-black-m-oki-orlando.png" alt="external-crud-database-outline-outline-black-m-oki-orlando"/> **CRUDs (Create, Read, Update, Delete)**: Se você está no controle das operações de gerenciamento do site, você tem acesso a poderosas ferramentas de CRUD. Crie novos produtos, atualize informações, leia dados existentes e exclua itens com facilidade, garantindo que nosso catálogo esteja sempre atualizado.
 
 <img width="20" height="20" src="https://img.icons8.com/fluency/48/phone--v1.png" alt="phone--v1"/>*Contato*: Em caso de dúvidas, problemas ou feedback, nossas informações de contato estão disponíveis para você. Ficamos à disposição para ajudá-lo.
 
