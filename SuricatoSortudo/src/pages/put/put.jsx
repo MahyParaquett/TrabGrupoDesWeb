@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "../../root/root.css";
 
 const url = "https://65496be2dd8ebcd4ab2491f6.mockapi.io/produtos";
 
@@ -9,7 +10,7 @@ function Put() {
   const [categoria, setCategoria] = useState("");
   const [valor, setValor] = useState(0);
   const [imagem, setImagem] = useState("");
-  const [productId, setProductId] = useState(""); 
+  const [productId, setProductId] = useState("");
 
   const submitPut = async () => {
     const produtoAtualizado = {
@@ -21,7 +22,10 @@ function Put() {
     };
 
     try {
-      const { data } = await axios.put(`${url}/${productId}`, produtoAtualizado);
+      const { data } = await axios.put(
+        `${url}/${productId}`,
+        produtoAtualizado
+      );
       console.log("Produto atualizado: ", data);
       alert("Produto atualizado com sucesso!");
       setNome("");
@@ -89,7 +93,10 @@ function Put() {
 
         <label>
           Categoria:
-          <select value={categoria} onChange={(e) => setCategoria(e.target.value)}>
+          <select
+            value={categoria}
+            onChange={(e) => setCategoria(e.target.value)}
+          >
             <option value="Aventura">Aventura</option>
             <option value="Estratégia">Estratégia</option>
             <option value="Família">Família</option>
