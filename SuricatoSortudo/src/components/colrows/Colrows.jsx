@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../root/root.css";
 import Container from "react-bootstrap/Container";
@@ -6,7 +8,6 @@ import Col from "react-bootstrap/Col";
 import CarouselHome from "../carouselHome/CarouselHome";
 import lancamentos from "../../components/img/lancamentos.png";
 import bannerlat from "../img/bannerlat.png";
-import { Link } from "react-router-dom";
 
 function Colrows() {
   const imgStyle = {
@@ -26,35 +27,35 @@ function Colrows() {
           <div>
             <ul className="lista-lateral">
               <li>
-                <Link to="./"> Home</Link>
+                <a href="#"> Home</a>
               </li>
               <li>
-                <Link to="#"> Frete</Link>
+                <a href="#"> Frete</a>
               </li>
               <li>
-                <Link to="#"> Agenda</Link>
+                <a href="#"> Agenda</a>
               </li>
               <li>
-                <Link to="#"> Apoiadores</Link>
+                <a href="#"> Apoiadores</a>
               </li>
               <li>
-                <Link to="./sobre"> Sobre nós</Link>
+                <a href="#"> Sobre nós</a>
               </li>
               <li>
-                <Link to="./contatos"> Contato</Link>
+                <a href="#"> Contato</a>
               </li>
               <hr />
               <li>
-                <Link to="#"> Login</Link>
+                <Link to="/login">Login</Link>
               </li>
               <li>
-                <Link to="./post"> POST</Link>
+                <a href="#"> POST</a>
               </li>
               <li>
-                <Link to="#"> PUT</Link>
+                <a href="#"> PUT</a>
               </li>
               <li>
-                <Link to="#"> DELETE</Link>
+                <a href="#"> DELETE</a>
               </li>
             </ul>
           </div>
@@ -70,28 +71,23 @@ function Colrows() {
           <hr />
           <h2>Novidades</h2>
           <p>
-            Os jogos de tabuleiro continuam a evoluir e surpreender os
-            entusiastas com novidades emocionantes. Uma tendência notável é a
-            fusão entre jogos de tabuleiro tradicionais e a tecnologia,
-            resultando em experiências inovadoras. Jogos que incorporam
-            aplicativos e dispositivos eletrônicos, como tablets e smartphones,
-            oferecem uma interatividade única, adicionando elementos digitais ao
-            jogo físico. Isso proporciona novas dimensões de estratégia e
-            imersão, como em jogos de exploração espacial que usam realidade
-            aumentada para dar vida ao universo do jogo.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+            molestias natus id quo commodi delectus dolorum deleniti quaerat
+            repellat, molestiae excepturi eveniet amet possimus nostrum labore
+            itaque fuga alias expedita. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Voluptatum eum impedit vero quidem modi debitis,
+            beatae neque perferendis laudantium assumenda minus eveniet vitae
+            molestias rerum quisquam! Modi unde maiores aliquid?
           </p>
           <p>
-            Outra tendência é a crescente popularidade de jogos de tabuleiro
-            temáticos e licenciados. Franquias de sucesso, como filmes, séries
-            de TV e videogames, estão sendo adaptadas para o formato de
-            tabuleiro, permitindo que os fãs mergulhem ainda mais fundo em seus
-            universos favoritos. Além disso, o mercado de jogos de tabuleiro
-            está vendo uma expansão na diversidade de temas e mecânicas,
-            tornando mais fácil para jogadores de todas as idades e interesses
-            encontrarem jogos que atendam às suas preferências. Essas novas
-            abordagens e temas inovadores estão impulsionando a criatividade no
-            mundo dos jogos de tabuleiro e tornando a experiência de jogo mais
-            emocionante do que nunca.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            maiores nisi dignissimos eveniet nihil fuga soluta, dolor et dicta
+            neque? Dolorem tempore consectetur aut libero possimus! Perferendis
+            iure molestias sequi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Blanditiis officiis doloremque error accusamus.
+            Voluptatem, ab tempora nesciunt consequuntur ipsum asperiores
+            temporibus, natus vel odio dicta harum, consectetur eaque magnam.
+            Iusto?
           </p>
           <hr />
           <a href="#" target="_blank">
@@ -100,20 +96,16 @@ function Colrows() {
           <hr />
           <h2>Clássicos x Modernos</h2>
           <p>
-            Os jogos de tabuleiro modernos se destacam das versões clássicas em
-            diversos aspectos, refletindo a evolução do gênero ao longo do
-            tempo. Enquanto os jogos de tabuleiro clássicos costumam ter regras
-            simples e mecânicas diretas, os modernos frequentemente introduzem
-            complexidade estratégica mais profunda, oferecendo uma gama mais
-            variada de escolhas aos jogadores. Além disso, os jogos modernos
-            muitas vezes valorizam a imersão e a narrativa, com temas ricos e
-            componentes de alta qualidade, tornando a experiência mais
-            envolvente. A colaboração entre jogadores também é uma
-            característica notável em muitos jogos modernos, ao contrário dos
-            clássicos, que muitas vezes enfatizam a competição direta. Em
-            resumo, os jogos de tabuleiro modernos oferecem uma gama mais ampla
-            de experiências, apelando para um público diversificado e elevando o
-            hobby a novos patamares de criatividade e inovação.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius harum
+            facere amet ipsa libero, esse hic quam aut numquam blanditiis,
+            veritatis sed dolor consequuntur deleniti pariatur earum expedita,
+            aspernatur porro! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quo enim eaque labore vitae voluptas quaerat consectetur
+            excepturi ab quibusdam dolor quam odio doloribus fugiat assumenda,
+            pariatur explicabo, deserunt nihil earum. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Repudiandae, fugit maiores quam
+            quod aut assumenda neque, quisquam quidem, pariatur error dicta vel
+            molestias magnam! Error quasi beatae corporis repellat aspernatur.
           </p>
         </Col>
         <Col

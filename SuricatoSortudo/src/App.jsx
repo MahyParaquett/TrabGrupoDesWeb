@@ -11,6 +11,7 @@ import Familia from "./pages/familia/Familia";
 import Carrinho from "./pages/carrinho/Carrinho";
 import Post from "./pages/post/post";
 import Contatos from "./pages/contatos/contatos";
+import Login from "./pages/login/login";
 import { CreatePut } from "./pages/put/put";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/post" element={<Post />} />
         <Route path="/put" element={<CreatePut />} />
         <Route path="/contatos" element={<Contatos />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
       <Footer />
