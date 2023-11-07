@@ -10,6 +10,7 @@ import Estrategia from "./pages/estrategia/Estrategia";
 import Familia from "./pages/familia/Familia";
 import Carrinho from "./pages/carrinho/Carrinho";
 import Post from "./pages/post/post";
+import Contatos from "./pages/contatos/contatos";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/carrinho" element={<Carrinho />} />
         <Route path="/post" element={<Post />} />
+        <Route path="/contatos" element={<Contatos />} />
         <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
       <Footer />
