@@ -10,7 +10,7 @@ import catan from "../../components/img/catan.png";
 import war from "../../components/img/war.webp";
 import xadrez from "../../components/img/xadrez.png";
 
-const url = "https://6542cd3301b5e279de1f982d.mockapi.io/produtos";
+const url = "https://65496be2dd8ebcd4ab2491f6.mockapi.io/produtos";
 
 function Estrategia() {
   const [loading, setLoading] = useState(false);

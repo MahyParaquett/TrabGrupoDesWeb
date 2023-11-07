@@ -6,7 +6,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-const url = "https://6542cd3301b5e279de1f982d.mockapi.io/produtos";
+const url = "https://65496be2dd8ebcd4ab2491f6.mockapi.io/produtos";
 
 function Aventura() {
   const [loading, setLoading] = useState(false);
