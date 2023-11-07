@@ -46,7 +46,7 @@ function Navbar1() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link
                     as={Link}
-                    to="/"
+                    to="/home"
                     style={{ color: "white", fontWeight: "bold" }}
                   >
                     Home
