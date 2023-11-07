@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./login.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../../root/root.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDice, faDiceD20, faDiceD6 } from "@fortawesome/free-solid-svg-icons";
 
 const dados = [
   {
@@ -77,8 +81,8 @@ export default function Login() {
 
   return (
     <>
-      <h1 className="login" style={{ marginBottom: "30px" }}>
-        Login
+      <h1 className="login" style={{ fontSize: "20px", marginBottom: "30px" }}>
+        Seja bem vindo(a) à Suricato Sortudo!
       </h1>
 
       <form>
@@ -87,7 +91,7 @@ export default function Login() {
           placeholder="Digite Seu login"
           value={login}
           onChange={(e) => setLogin(e.target.value)}
-          style={{ marginBottom: "10px" }}
+          style={{ marginBottom: "20px" }}
         />
         <br />
         <input
@@ -99,7 +103,12 @@ export default function Login() {
         />
         <br />
         <button type="button" onClick={entrar}>
-          Entrar
+          <FontAwesomeIcon
+            icon={faDiceD20}
+            title="Entrar"
+            beat
+            style={{ color: "rgba(240, 21, 32, 0.678)", fontSize: "30px" }}
+          />
         </button>
       </form>
       {erro && <p>{erro}</p>}
