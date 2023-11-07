@@ -14,10 +14,14 @@ function post() {
   const [nome, setNome] = useState("");
   const [descricao, setDescricao] = useState("");
   const [categoria, setCategoria] = useState("");
-  const [valor, setValor] = useState(0);
+  const [valor, setValor] = useState(null);
   const [imagem, setImagem] = useState("");
 
   const submeter = async () => {
+    if (nome == null || descricao == null || valor == null || imagem == null) {
+      alert("Preencha todos os campos.");
+      return;
+    }
     const novoProduto = {
       nome: nome,
       descricao: descricao,
@@ -33,7 +37,7 @@ function post() {
       setNome("");
       setDescricao("");
       setCategoria("");
-      setValor(0);
+      setValor(null);
       setImagem("");
     } catch (error) {
       console.error("Erro ao cadastrar produto: ", error);

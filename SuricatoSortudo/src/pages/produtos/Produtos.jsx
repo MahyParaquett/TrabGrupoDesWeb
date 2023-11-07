@@ -137,7 +137,7 @@ function Produtos() {
                   <div className="card">
                     <img
                       src={item.imagem} //url
-                      className="card-img-top"
+                      className="card-img-top product-image"
                       alt={item.nome}
                     />
                     <div className="card-body">
