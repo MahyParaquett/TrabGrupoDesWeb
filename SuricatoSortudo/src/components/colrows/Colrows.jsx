@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import CarouselHome from "../carouselHome/CarouselHome";
 import lancamentos from "../../components/img/lancamentos.png";
 import bannerlat from "../img/bannerlat.png";
+import { Link } from "react-router-dom";
 
 function Colrows() {
   const imgStyle = {
@@ -25,35 +26,35 @@ function Colrows() {
           <div>
             <ul className="lista-lateral">
               <li>
-                <a href="#"> Home</a>
+                <Link to="./"> Home</Link>
               </li>
               <li>
-                <a href="#"> Frete</a>
+                <Link to="#"> Frete</Link>
               </li>
               <li>
-                <a href="#"> Agenda</a>
+                <Link to="#"> Agenda</Link>
               </li>
               <li>
-                <a href="#"> Apoiadores</a>
+                <Link to="#"> Apoiadores</Link>
               </li>
               <li>
-                <a href="#"> Sobre nós</a>
+                <Link to="./sobre"> Sobre nós</Link>
               </li>
               <li>
-                <a href="#"> Contato</a>
+                <Link to="./contatos"> Contato</Link>
               </li>
               <hr />
               <li>
-                <a href="#"> Login</a>
+                <Link to="#"> Login</Link>
               </li>
               <li>
-                <a href="#"> POST</a>
+                <Link to="./post"> POST</Link>
               </li>
               <li>
-                <a href="#"> PUT</a>
+                <Link to="#"> PUT</Link>
               </li>
               <li>
-                <a href="#"> DELETE</a>
+                <Link to="#"> DELETE</Link>
               </li>
             </ul>
           </div>

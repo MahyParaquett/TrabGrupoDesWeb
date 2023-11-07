@@ -1,11 +1,48 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../root/root.css";
+import { useState } from "react";
+import axios from "axios";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import bannerlat from "../../components/img/bannerlat.png";
 
+const url = "https://65496be2dd8ebcd4ab2491f6.mockapi.io/produtos";
+
 function post() {
+  const [nome, setNome] = useState("");
+  const [descricao, setDescricao] = useState("");
+  const [categoria, setCategoria] = useState("");
+  const [valor, setValor] = useState(0);
+  const [imagem, setImagem] = useState("");
+
+  const submeter = async () => {
+    const novoProduto = {
+      nome: nome,
+      descricao: descricao,
+      categoria: categoria,
+      valor: valor,
+      imagem: imagem,
+    };
+
+    try {
+      const { data } = await axios.post(url, novoProduto);
+      console.log("Produto cadastrado: ", data);
+      alert("Produto cadastrado: ", data);
+      setNome("");
+      setDescricao("");
+      setCategoria("");
+      setValor(0);
+      setImagem("");
+    } catch (error) {
+      console.error("Erro ao cadastrar produto: ", error);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Container>
       <Row className="">
@@ -56,19 +93,75 @@ function post() {
           className="column-background-2 rounded"
           style={{ padding: "10px" }}
         >
-          <h2>Destaques Recentes</h2>
-          <br />
+          <h2>Cadastrar produtos</h2>
           <hr />
-          <h2>Novidades</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
-            molestias natus id quo commodi delectus dolorum deleniti quaerat
-            repellat, molestiae excepturi eveniet amet possimus nostrum labore
-            itaque fuga alias expedita. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Voluptatum eum impedit vero quidem modi debitis,
-            beatae neque perferendis laudantium assumenda minus eveniet vitae
-            molestias rerum quisquam! Modi unde maiores aliquid?
-          </p>
+          <form onSubmit={handleSubmit}>
+            <label>
+              Nome
+              <input
+                type="text"
+                placeholder="Digite o nome do produto"
+                value={nome}
+                onChange={(e) => setNome(e.target.value)}
+                style={{ margin: 10, padding: 8 }}
+              />
+            </label>
+            <br />
+
+            <label>
+              Descrição
+              <input
+                type="text"
+                placeholder="Descreva o produto"
+                value={descricao}
+                onChange={(e) => setDescricao(e.target.value)}
+                style={{ margin: 10, padding: 8 }}
+              />
+            </label>
+            <br />
+
+            <label>
+              Categoria
+              <select
+                name="categoria"
+                value={categoria}
+                onChange={(e) => setCategoria(e.target.value)}
+                style={{ margin: 10, padding: 8 }}
+              >
+                <option value="Aventura">Aventura</option>
+                <option value="Estratégia">Estratégia</option>
+                <option value="Família">Família</option>
+              </select>
+            </label>
+            <br />
+
+            <label>
+              Valor
+              <input
+                type="number"
+                placeholder="Digite o valor do produto"
+                value={valor}
+                onChange={(e) => setValor(e.target.value)}
+                style={{ margin: 10, padding: 8 }}
+              />
+            </label>
+            <br />
+            <label>
+              Imagem
+              <input
+                type="text"
+                placeholder="Cole aqui a URL da imagem"
+                value={imagem}
+                onChange={(e) => setImagem(e.target.value)}
+                style={{ margin: 10, padding: 8 }}
+              />
+            </label>
+            <br />
+
+            <button onClick={submeter} style={{ margin: 10, padding: 10 }}>
+              Submeter
+            </button>
+          </form>
         </Col>
         <Col
           className="column-background-3 rounded"
