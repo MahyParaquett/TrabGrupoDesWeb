@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../root/root.css";
 import Container from "react-bootstrap/Container";
@@ -44,7 +46,7 @@ function Colrows() {
               </li>
               <hr />
               <li>
-                <a href="#"> Login</a>
+                <Link to="/login">Login</Link>
               </li>
               <li>
                 <a href="#"> POST</a>
