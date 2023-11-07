@@ -19,7 +19,7 @@ function App() {
     <>
       <Navbar1 />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
         <Route path="/produtos" element={<Produtos />} />
         <Route path="/aventura" element={<Aventura />} />
         <Route path="/estrategia" element={<Estrategia />} />
@@ -29,7 +29,7 @@ function App() {
         <Route path="/post" element={<Post />} />
         <Route path="/put" element={<Put />} />
         <Route path="/contatos" element={<Contatos />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
       <Footer />

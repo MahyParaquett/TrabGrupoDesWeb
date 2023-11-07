@@ -27,7 +27,7 @@ function Colrows() {
           <div>
             <ul className="lista-lateral">
               <li>
-                <a href="#"> Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <a href="#"> Frete</a>
@@ -46,7 +46,7 @@ function Colrows() {
               </li>
               <hr />
               <li>
-                <Link to="/login">Login</Link>
+                <Link to="/">Login</Link>
               </li>
               <li>
                 <a href="#"> POST</a>

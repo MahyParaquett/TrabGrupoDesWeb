@@ -31,7 +31,7 @@ const dados = [
   {
     login: "Bea",
     senha: "4567",
-    canDelete: false,
+    canDelete: true,
   },
   {
     login: "mahyara",
@@ -67,7 +67,7 @@ export default function Login() {
         setLogin("");
         setSenha("");
 
-        navigate("/");
+        navigate("/home");
         // navigate(`/${login}`);
       } else {
         setErro("Login ou Senha Inválidos!");
