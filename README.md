@@ -2,14 +2,14 @@
 <h1><img style="width: 100px; height: 100px; object-fit: cover;" src="https://github.com/MahyParaquett/TrabGrupoDesWeb/blob/develop/SuricatoSortudo/src/components/img/logosuricatocirc.png" alt="Banner">O Suricato Sortudo</h1>
 <br/>
 
-<img width="50" height="50" src="https://img.icons8.com/ios-filled/50/000000/about.png" alt="about"/> *SOBRE NÓS* 
+<img width="25" height="25" src="https://img.icons8.com/color/48/about.png" alt="about"/> *SOBRE NÓS* 
 ---
 
 Bem-vindo ao Suricato Sortudo, a sua loja de jogos de tabuleiro! Somos apaixonados por jogos e nosso objetivo é trazer a você a melhor seleção de jogos de tabuleiro do mercado. Aqui no Suricato Sortudo, acreditamos que os jogos de tabuleiro são uma maneira fantástica de reunir as pessoas. Seja para uma noite em família, uma reunião de amigos ou um evento de team building, temos o jogo perfeito para você. Nossa missão é simples: proporcionar a você a melhor experiência de compra de jogos de tabuleiro. Trabalhamos incansavelmente para selecionar os jogos mais divertidos, desafiadores e envolventes. Desde os clássicos atemporais até as novidades mais quentes, temos algo para todos. Além disso, estamos sempre aqui para ajudar. Se você precisa de recomendações ou tem dúvidas sobre um jogo, nossa equipe de especialistas em jogos está pronta para ajudar. Então, se você está procurando o próximo grande jogo para adicionar à sua coleção, ou apenas começando no mundo dos jogos de tabuleiro, o Suricato Sortudo é o lugar para você. Venha explorar nossa incrível seleção de jogos hoje!
 
 ---
 
-<img width="25" height="25" src="https://img.icons8.com/ios/50/decentralized-network.png" alt="decentralized-network"/> *TECNOLOGIAS UTILIZADAS* 
+<img width="25" height="25" src="https://img.icons8.com/stickers/100/technology.png" alt="technology"/>*TECNOLOGIAS UTILIZADAS* 
 ---
 
 Esse projeto foi desenvolvido utilizando as seguintes tecnologias :
@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias :
 
 ---
 
- <img width="25" height="25" src="https://img.icons8.com/ios/50/conference-call--v1.png" alt="conference-call--v1"/> *MEMBROS*
+ <img width="25" height="25" src="https://img.icons8.com/color/48/conference-call--v1.png" alt="conference-call--v1"/> *MEMBROS*
 ---
 
 <img width="40" height="40" src="https://img.icons8.com/color/48/github--v1.png" alt="github--v1"/>[Lucas Gonzaga](https://github.com/olucasgon)
@@ -43,7 +43,8 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias :
 
 ---
 
-<img width="25" height="25" src="https://img.icons8.com/ios/50/requirements.png" alt="requirements"/> *REQUISITOS ATENDIDOS*
+<img width="25" height="25" src="https://img.icons8.com/fluency/48/verified-badge--v1.png" alt="verified-badge--v1"/> *REQUISITOS ATENDIDOS*
+
 ---
 
 <img width="20" height="20" src="https://img.icons8.com/material-outlined/24/checkbox.png" alt="checkbox"/>Utilizar Componentes Funcionais e no mínimo 2 Hooks, useState e useEffect;
