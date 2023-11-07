@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Navbar1 from "./components/navbar/Navbar";
+import Home from "./pages/home/Home";
+import Footer from "./components/footer/footer";
+import Sobre from "./pages/sobre/Sobre";
+import Produtos from "./pages/produtos/Produtos";
+import Aventura from "./pages/aventura/Aventura";
+import Estrategia from "./pages/estrategia/Estrategia";
+import Familia from "./pages/familia/Familia";
+import Carrinho from "./pages/carrinho/Carrinho";
+import Post from "./pages/post/post";
+import Contatos from "./pages/contatos/contatos";
+import { CreatePut } from "./pages/put/put";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar1 />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/produtos" element={<Produtos />} />
+        <Route path="/aventura" element={<Aventura />} />
+        <Route path="/estrategia" element={<Estrategia />} />
+        <Route path="/familia" element={<Familia />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="/post" element={<Post />} />
+        <Route path="/put" element={<CreatePut />} />
+        <Route path="/contatos" element={<Contatos />} />
+        <Route path="*" element={<h1>Página não encontrada</h1>} />
+      </Routes>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
